@@ -111,7 +111,7 @@ class ClientAPI {
   }
 
   async log(msg, type = "info") {
-    const accountPrefix = `[NEURA][${this.accountIndex + 1}][${this.itemData.address}]`;
+    const accountPrefix = `[BASE_JUMP][${this.accountIndex + 1}][${this.itemData.address}]`;
     let ipPrefix = "[Local IP]";
     if (settings.USE_PROXY) {
       ipPrefix = this.proxyIP ? `[${this.proxyIP}]` : "[Unknown IP]";
